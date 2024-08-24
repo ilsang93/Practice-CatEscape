@@ -25,7 +25,7 @@ public class UIController : MonoBehaviour
     public float TimeScore { get => timeScore; set {
             if (isGameOver) return;
             timeScore = value;
-            timeScoreText.text = "Time : " + (int)timeScore;
+            timeScoreText.text = "Time : " + timeScore.ToString("F2") + " sec";
         } }
 
     private int hp = 10;
